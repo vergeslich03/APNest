@@ -31,14 +31,14 @@ progression_items = {
     "Punchcard - EQKE Shell": 9140019,
     "Punchcard - Powder Charges": 9140020,
     "Punchcard - Scout Plane": 9140021,
+    "Punchcard - Emergency Move": 9140022,
 }
 
 utility_items = {
     "Punchcard - Spotter": 9141001,
     "Requisition - Spotter": 9141002,
-    "Punchcard - Emergency Move": 9141003,
-    "Punchcard - Location Report": 9141004,
-    "Requisition - Location Report": 9141005,
+    "Punchcard - Location Report": 9141003,
+    "Requisition - Location Report": 9141004,
 }
 
 filler_items = {
