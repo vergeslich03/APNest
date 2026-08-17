@@ -90,3 +90,9 @@ def set_connection_rules(world: MultiWorld, options, player: int):
             player,
         ),
     )
+
+    world.completion_condition[player] = lambda state: state.can_reach(
+        "Mission 15: White Shells",
+        'Location',
+        player,
+    )
