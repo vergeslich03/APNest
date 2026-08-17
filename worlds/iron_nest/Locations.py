@@ -9,7 +9,7 @@ class INLocation(Location):
 # X --> Goal (0: Missions, 1: Medals)
 # YYY --> Location
 
-mission_ids = {
+mission_locations = {
     "Mission 1: Calibration Fire": 9140001,
     "Mission 2: Fire and Light": 9140002,
     "Mission 3: Liberation": 9140003,
@@ -36,7 +36,7 @@ mission_ids = {
 # SC --> Salvo Commendation
 # CB --> Counter-Battery Commendation
 # NQ --> No Quarter Cross
-medal_ids = {
+medal_locations = {
     "Mission 1: Calibration Fire - OE Bronze": 9141001,
     "Mission 1: Calibration Fire - OE Silver": 9141002,
     "Mission 1: Calibration Fire - OE Gold": 9141003,
@@ -67,4 +67,9 @@ medal_ids = {
     "Mission 4: Counter-Battery - NQ Bronze": 9141028,
     "Mission 4: Counter-Battery - NQ Silver": 9141029,
     "Mission 4: Counter-Battery - NQ Gold": 9141030,
+}
+
+all_locations = {
+    **mission_locations,
+    **medal_locations,
 }
