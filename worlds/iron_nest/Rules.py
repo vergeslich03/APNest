@@ -1,6 +1,6 @@
 from BaseClasses import MultiWorld
 
-def set_rules(world: MultiWorld, options, player: int):
+def set_connection_rules(world: MultiWorld, options, player: int):
     menu_region = world.get_region("Menu", player)
     mission_1_region = world.get_region("Mission 1: Calibration Fire", player)
     mission_2_region = world.get_region("Mission 2: Fire and Light", player)
