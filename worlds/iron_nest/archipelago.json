@@ -1,0 +1,11 @@
+{
+  "game": "IRON NEST: Heavy Turret Simulator",
+  "authors": [
+    "vergeslich03"
+  ],
+  "minimum_ap_version": "0.6.7",
+  "world_version": "0.0.1",
+  "apworld_revision": "0.0.1a",
+  "compatible_version": 7,
+  "version": 7
+}
