@@ -21,25 +21,19 @@ def set_connection_rules(world: MultiWorld, options, player: int):
     menu_region.connect(connecting_region=mission_1_region)
     mission_1_region.connect(
         connecting_region=mission_2_region,
-        rule=lambda state: state.has_all(
-            ["Punchcard - HE Shell", "Punchcard - STAR Shell"],
-            player,
-        ),
     )
     mission_2_region.connect(
         connecting_region=mission_3_region,
         rule=lambda state: state.has_all(
-            ["Punchcard - AP Shell", "Punchcard - Powder Charges", "Punchcard - Scout Plane"],
+            ["Punchcard - AP Shell", "Punchcard - Powder Charges"],
             player,
         ),
     )
     mission_3_region.connect(
-        connecting_region=mission_4_region,
-        rule=lambda state: state.has("Punchcard - INCN Shell", player),
+        connecting_region=mission_4_region
     )
     mission_4_region.connect(
         connecting_region=mission_5_region,
-        rule=lambda state: state.has("Punchcard - HCHE Shell", player),
     )
     mission_5_region.connect(
         connecting_region=mission_6_region,
@@ -47,48 +41,36 @@ def set_connection_rules(world: MultiWorld, options, player: int):
     )
     mission_6_region.connect(
         connecting_region=mission_7_region,
-        rule=lambda state: state.has("Punchcard - DRIL Shell", player),
     )
     mission_7_region.connect(
         connecting_region=mission_8_region,
-        rule=lambda state: state.has("Punchcard - LE Shell", player),
     )
     mission_8_region.connect(
         connecting_region=mission_9_region,
-        rule=lambda state: state.has_all(
-            ["Punchcard - TEAR Shell", "Punchcard - PHGN Shell"],
-            player,
-        ),
+        rule=lambda state: state.has("Punchcard - TEAR Shell", player),
     )
     mission_9_region.connect(
         connecting_region=mission_10_region,
-        rule=lambda state: state.has("Punchcard - WP Shell", player),
     )
     mission_10_region.connect(
         connecting_region=mission_11_region,
-        rule=lambda state: state.has("Punchcard - PCLM Shell", player),
     )
     mission_11_region.connect(
         connecting_region=mission_12_region,
-        rule=lambda state: state.has("Punchcard - APHE Shell", player),
     )
     mission_12_region.connect(
         connecting_region=mission_13_region,
         rule=lambda state: state.has_all(
-            ["Punchcard - FLCH Shell", "Punchcard - PRPG Shell", "Punchcard - Emergency Move"],
+            ["Punchcard - Emergency Move", "Punchcard - Scout Plane"],
             player,
-        )
+        ),
     )
     mission_13_region.connect(
         connecting_region=mission_14_region,
-        rule=lambda state: state.has("Punchcard - THRM Shell", player),
     )
     mission_14_region.connect(
         connecting_region=mission_15_region,
-        rule=lambda state: state.has_all(
-            ["Punchcard - ATMC Shell", "Punchcard - CYAN Shell"],
-            player,
-        ),
+        rule=lambda state: state.has("Punchcard - ATMC Shell", player),
     )
 
     world.completion_condition[player] = lambda state: state.can_reach(
