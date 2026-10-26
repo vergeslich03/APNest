@@ -60,6 +60,12 @@ class Filler(DefaultOnToggle):
     """
     display_name = "Filler"
 
+class DeathLink(Toggle):
+    """
+    Enables Death-Link.
+    """
+    display_name = "Death-Link"
+
 @dataclass
 class INOptions(PerGameCommonOptions):
     goal: Goal
@@ -69,3 +75,4 @@ class INOptions(PerGameCommonOptions):
     traps: Traps
     trap_percentage: TrapPercentage
     filler: Filler
+    death_link: DeathLink
