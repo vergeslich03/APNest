@@ -96,4 +96,5 @@ class INWorld(World):
             "goal": self.options.goal.current_key,
             "medal_tier": self.options.medal_tier.current_key,
             "include_medals": bool(self.options.include_medals),
+            "death_link": bool(self.options.death_link),
         }
