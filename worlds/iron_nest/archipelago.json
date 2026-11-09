@@ -4,8 +4,7 @@
     "vergeslich03"
   ],
   "minimum_ap_version": "0.6.7",
-  "world_version": "0.0.1",
-  "apworld_revision": "0.0.1a",
+  "world_version": "0.2.2",
   "compatible_version": 7,
   "version": 7
 }
