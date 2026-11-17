@@ -4,7 +4,7 @@ from Options import Choice, DefaultOnToggle, PerGameCommonOptions, Range, Toggle
 class Goal(Choice):
     """
     Choose the goal for your run:
-    - Mission 15: Complete misison 'White Shells'
+    - Mission 15: Complete mission 'White Shells'
     - All Medals: Get all Medals of a defined tier selected later (Bronze/Silver/Gold)
     - All Endings: Get all four endings of the game
     """
