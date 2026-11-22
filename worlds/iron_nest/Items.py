@@ -11,12 +11,13 @@ class INItem(Item):
 
 progression_items = {
     "Punchcard - AP Shell": 9140001,
-    "Punchcard - SMK Shell": 9140002,
-    "Punchcard - TEAR Shell": 9140003,
-    "Punchcard - ATMC Shell": 9140004,
-    "Punchcard - Powder Charges": 9140005,
-    "Punchcard - Scout Plane": 9140006,
-    "Punchcard - Emergency Move": 9140007,
+    "Punchcard - HE Shell": 9140002,
+    "Punchcard - SMK Shell": 9140003,
+    "Punchcard - TEAR Shell": 9140004,
+    "Punchcard - ATMC Shell": 9140005,
+    "Punchcard - Powder Charges": 9140006,
+    "Punchcard - Scout Plane": 9140007,
+    "Punchcard - Emergency Move": 9140008,
 }
 
 utility_items = {
@@ -24,7 +25,6 @@ utility_items = {
     "Requisition - Spotter": 9141002,
     "Punchcard - Location Report": 9141003,
     "Requisition - Location Report": 9141004,
-    "Punchcard - HE Shell": 9141005,
     "Punchcard - STAR Shell": 9141006,
     "Punchcard - INCN Shell": 9141007,
     "Punchcard - HCHE Shell": 9141008,
