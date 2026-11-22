@@ -51,6 +51,7 @@ def set_connection_rules(world: MultiWorld, options, player: int):
     )
     mission_9_region.connect(
         connecting_region=mission_10_region,
+        rule=lambda state: state.has("Punchcard - HE Shell", player),
     )
     mission_10_region.connect(
         connecting_region=mission_11_region,
