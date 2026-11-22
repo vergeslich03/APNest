@@ -1,4 +1,6 @@
 from BaseClasses import MultiWorld
+from worlds.generic.Rules import add_item_rule
+from .Locations import medal_locations
 
 def set_connection_rules(world: MultiWorld, options, player: int):
     menu_region = world.get_region("Menu", player)
@@ -79,3 +81,12 @@ def set_connection_rules(world: MultiWorld, options, player: int):
         'Location',
         player,
     )
+
+    # Silver/Gold medals can be very hard or impossible in early game (or broken), so never put progression behind them.
+    if options.include_medals:
+        for name in medal_locations:
+            if name.endswith((" Silver", " Gold")):
+                add_item_rule(
+                    world.get_location(name, player),
+                    lambda item: not item.advancement,
+                )
